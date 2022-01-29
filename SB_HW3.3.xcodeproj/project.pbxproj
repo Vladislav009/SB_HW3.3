@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		064D678727A54BBA00115717 /* ValidatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064D678627A54BBA00115717 /* ValidatorTextField.swift */; };
+		064D678A27A54CD200115717 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064D678927A54CD200115717 /* UserManager.swift */; };
+		0653428827A43DB600486CD3 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0653428727A43DB600486CD3 /* LoginView.swift */; };
 		06CCFB0027A2F5650094562C /* SB_HW3_3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCFAFF27A2F5650094562C /* SB_HW3_3App.swift */; };
 		06CCFB0227A2F5650094562C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCFB0127A2F5650094562C /* ContentView.swift */; };
 		06CCFB0427A2F5670094562C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CCFB0327A2F5670094562C /* Assets.xcassets */; };
 		06CCFB0727A2F5670094562C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06CCFB0627A2F5670094562C /* Preview Assets.xcassets */; };
+		06CCFB0F27A2F5E40094562C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCFB0E27A2F5E40094562C /* MainView.swift */; };
+		06CCFB1227A2F8870094562C /* CountdownAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CCFB1127A2F8870094562C /* CountdownAction.swift */; };
+		06D7D8EE27A578620037C067 /* ColorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06D7D8ED27A578620037C067 /* ColorButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		064D678627A54BBA00115717 /* ValidatorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorTextField.swift; sourceTree = "<group>"; };
+		064D678927A54CD200115717 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		0653428727A43DB600486CD3 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		06CCFAFC27A2F5650094562C /* SB_HW3.3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SB_HW3.3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CCFAFF27A2F5650094562C /* SB_HW3_3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SB_HW3_3App.swift; sourceTree = "<group>"; };
 		06CCFB0127A2F5650094562C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		06CCFB0327A2F5670094562C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		06CCFB0627A2F5670094562C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		06CCFB0E27A2F5E40094562C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		06CCFB1127A2F8870094562C /* CountdownAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownAction.swift; sourceTree = "<group>"; };
+		06D7D8ED27A578620037C067 /* ColorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +44,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		064D678827A54CC000115717 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				064D678927A54CD200115717 /* UserManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		06CCFAF327A2F5650094562C = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +71,10 @@
 		06CCFAFE27A2F5650094562C /* SB_HW3.3 */ = {
 			isa = PBXGroup;
 			children = (
+				064D678827A54CC000115717 /* Managers */,
+				06CCFB1027A2F7C50094562C /* Actions */,
+				06CCFB0D27A2F57F0094562C /* Views */,
 				06CCFAFF27A2F5650094562C /* SB_HW3_3App.swift */,
-				06CCFB0127A2F5650094562C /* ContentView.swift */,
 				06CCFB0327A2F5670094562C /* Assets.xcassets */,
 				06CCFB0527A2F5670094562C /* Preview Content */,
 			);
@@ -65,6 +87,26 @@
 				06CCFB0627A2F5670094562C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		06CCFB0D27A2F57F0094562C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06CCFB0127A2F5650094562C /* ContentView.swift */,
+				06CCFB0E27A2F5E40094562C /* MainView.swift */,
+				0653428727A43DB600486CD3 /* LoginView.swift */,
+				06D7D8ED27A578620037C067 /* ColorButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		06CCFB1027A2F7C50094562C /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				06CCFB1127A2F8870094562C /* CountdownAction.swift */,
+				064D678627A54BBA00115717 /* ValidatorTextField.swift */,
+			);
+			path = Actions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +180,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				06CCFB0227A2F5650094562C /* ContentView.swift in Sources */,
+				06CCFB0F27A2F5E40094562C /* MainView.swift in Sources */,
+				064D678A27A54CD200115717 /* UserManager.swift in Sources */,
 				06CCFB0027A2F5650094562C /* SB_HW3_3App.swift in Sources */,
+				0653428827A43DB600486CD3 /* LoginView.swift in Sources */,
+				064D678727A54BBA00115717 /* ValidatorTextField.swift in Sources */,
+				06D7D8EE27A578620037C067 /* ColorButtonView.swift in Sources */,
+				06CCFB1227A2F8870094562C /* CountdownAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
